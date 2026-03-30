@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="Perfil">
+        <form method="Get">
+        <fieldset id="Personal_information">
+            <legend>Informações Pessoais</legend>
+
+            <label for="Name">Nome completo:</label>
+            <input required minlength="7" maxlength="50" id="Name" name="Name" placeholder="Nome" type="text">
+
+            <label for="email">Email:</label>
+            <input required placeholder="exemplo@gmail.com" type="email" name="email" id="email">
+            
+            <label for="password">Senha:</label>
+            <input minlength="8" required type="password" name="password" id="password">
+
+            <label for="tel">Telefone:</label>
+            <input required maxlength="9" type="tel" name="tel" id="tel">
+
+            <div id="date-and-file-container">
+            <label for="date">Data de nascimento:</label>
+            <input required type="date" name="date" id="date">
+
+            <label for="file">Foto de perfil:</label>
+            <input type="file" name="file" id="file">
+            </div>
+        </fieldset>
+<hr>
+        <fieldset id="Profissional_information">
+            <legend>Informações Profissionais</legend>
+
+            <label for="It_Area">Área de atuação:</label>
+            <select required name="It_Area" id="It_Area">
+                <option value="Default">Selecione..</option>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="Full Stack">Full Stack</option>
+                <option value="UX/UI">UX/UI</option>
+                <option value="Dados">Dados</option>
+            </select>
+
+            <p>Nível de experiência:</p>
+
+            <div id="level">
+            <input type="radio" name="Experience" id="Exp1" value="Iniciante">
+            <label for="Exp1">Iniciante</label>
+
+            <input type="radio" name="Experience" id="Exp2" value="Intermediário">
+            <label for="Exp2">Intermediário</label>
+
+            <input type="radio" name="Experience" id="Exp3" value="Avançado">
+            <label for="Exp3">Avançado</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="Technology_information">
+            <legend>Tecnologias</legend>
+
+            <p>Tecnologias que domina:</p>
+
+            <input type="checkbox" name="Tech" id="Tech1" value="HTML">
+            <label for="Tech1">HTML</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech2" value="CSS">
+            <label for="Tech2">CSS</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech3" value="Javascript">
+            <label for="Tech3">Javascript</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech4" value="React">
+            <label for="Tech4">React</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech5" value="Node.js">
+            <label for="Tech5">Node.js</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech6" value="Java">
+            <label for="Tech6">Java</label><br>
+
+            <input type="checkbox" name="Tech" id="Tech7" value="Python">
+            <label for="Tech7">Python</label><br>
+
+        </fieldset>
+
+        <fieldset id="Preferences">
+            <legend>Preferências</legend>
+
+            <label for="Trail">Trilhas do evento:</label>
+            <select required name="Trail" id="Trail">
+                <option selected disabled value="">Selecione..</option>
+                <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                <option value="Inteligência Artificial">Inteligência Artificial</option>
+                <option value="Mobile">Mobile</option>
+                <option value="DevOps">DevOps</option>
+            </select>
+
+            <label for="Color">Cor do crachá:</label>
+            <input type="color" name="Color" id="Color">
+
+            <label for="Time">Horário do evento:</label>
+            <input type="time" name="Time" id="Time">
+        </fieldset>
+
+        <fieldset id="Final">
+        <legend>Final</legend>
+
+            <label for="Informations">Informações adicionais:</label><br>
+            <textarea style="width: 400px; height: 100px;" minlength="10" maxlength="100" name="Informations" id="Informations"></textarea><br>
+
+            <input required type="checkbox" name="Conditions" id="Conditions">
+            <label for="Conditions">Aceitar termos e serviços do evento</label><br>
+
+            <input type="checkbox" name="News" id="News">
+            <label for="News">Deseja receber novidades por email?</label><br>
+
+            <button type="submit">Enviar inscrição</button>
+        </fieldset>
+            </form>
+
+    </section>
+
+</body>
+</html>
