@@ -4,7 +4,20 @@
 }
 
 body{
-    background-color: #f1efef
+    background-color: #f1efef;
+    font-family: "Inter" , sans-serif;
+}
+
+input, select{
+    border-radius:3px;
+    padding:6px;
+    border:1px solid #000
+}
+
+h5{
+    font-family: "Poppins" , sans-serif;
+    font-weight:500;
+    font-size: 15px;
 }
 
 form{
@@ -65,3 +78,18 @@ select{
 label{
     margin: 0;
 }
+textarea{
+    width: 400px;
+    height:100px;
+    margin:5px 0;
+    resize: none;
+    }
+
+    @media(max-width: 480px){
+        textarea{
+    width: 200px;
+    height:100px;
+    }
+
+   
+    }
