@@ -31,4 +31,26 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text-primary-color);
+}
+
+.section-tittle h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
+
+.section-tittle hr {
+  margin: 16px auto 32px;
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-tittle h2 {
+    font-size: 32px;
+  }
 }
