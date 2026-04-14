@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@ header {
   height: 64px;
 }
 
-.img-desktop{
+.img-desktop {
   display: none;
 }
 
@@ -22,7 +22,7 @@ header {
   margin-top: 24px;
 }
 
-input[type="checkbox"]:checked~nav {
+input[type="checkbox"]:checked ~ nav {
   display: block;
   position: absolute;
   top: 100%;
@@ -51,7 +51,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  header{
+  .main-header {
     align-items: center;
   }
   .navigation-menu {
@@ -67,39 +67,39 @@ nav {
     display: block;
   }
 
-  .navigation-menu ul{
+  .navigation-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
-  .navigation-menu li{
+  .navigation-menu li {
     margin: 0;
     align-self: center;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .logo{
+  .logo {
     width: 260px;
-    height:64px;
+    height: 64px;
   }
-  .img-desktop{
-  display: block;
-}
-  .img-mobile{
+  .img-desktop {
+    display: block;
+  }
+  .img-mobile {
     display: none;
   }
-  header{
+  .main-header {
     padding: 38px 120px;
   }
-  .navigation-menu a:hover{
+  .navigation-menu a:hover {
     color: var(--primary-color);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  header{
+  .main-header {
     padding: 38px 160px;
   }
 }
